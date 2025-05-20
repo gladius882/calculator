@@ -4,10 +4,17 @@
 
 #calculator {
     width: 220px;
+    background-color: grey;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
 }
 
 .keyboard {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button {
