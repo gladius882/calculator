@@ -13,7 +13,24 @@ export class Calculator {
         if(this.operator == Operator.PLUS) {
             this.currentValue+=number;
             this.operator = null;
-            return this.currentValue;
         }
+
+        if(this.operator == Operator.MINUS) {
+            this.currentValue-=number;
+            this.operator = null;
+        }
+
+        if(this.operator == Operator.MULTIPLY) {
+            this.currentValue*=number;
+            this.operator = null;
+        }
+
+        if(this.operator == Operator.DIVIDE) {
+            this.currentValue/=number;
+            this.operator = null;
+        }
+
+
+        return this.currentValue;
     }
 }
